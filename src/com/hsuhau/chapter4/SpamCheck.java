@@ -5,6 +5,8 @@ import java.net.UnknownHostException;
 
 /**
  * 示例4-9：SpamCheck
+ * <p>
+ * 112p
  */
 public class SpamCheck {
     public static final String BLACKHOLE = "sbl.spamhaus.org";

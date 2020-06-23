@@ -9,8 +9,11 @@ import java.net.PasswordAuthentication;
 
 /**
  * 示例5-11：一个GUI认证程序
+ * <p>
+ * 163p
  */
 public class DialogAuthenticator extends Authenticator {
+    PasswordAuthentication response = null;
     private JDialog passwordDialog;
     private JTextField usernameField = new JTextField(20);
     private JPasswordField passwordField = new JPasswordField(20);
@@ -79,7 +82,10 @@ public class DialogAuthenticator extends Authenticator {
         passwordDialog.setVisible(true);
     }
 
-    PasswordAuthentication response = null;
+    public PasswordAuthentication getPasswordAuthentication() {
+        this.show();
+        return this.response;
+    }
 
     class OKResponse implements ActionListener {
         @Override
@@ -103,10 +109,5 @@ public class DialogAuthenticator extends Authenticator {
             passwordField.setText("");
             response = null;
         }
-    }
-
-    public PasswordAuthentication getPasswordAuthentication() {
-        this.show();
-        return this.response;
     }
 }

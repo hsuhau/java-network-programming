@@ -2,7 +2,6 @@ package com.hsuhau.chapter5;
 
 import java.io.BufferedInputStream;
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -12,6 +11,8 @@ import java.net.URL;
 
 /**
  * 示例5-2：下载一个Web页面
+ * <p>
+ * 130p
  */
 public class SourceViewer {
     public static void main(String[] args) {

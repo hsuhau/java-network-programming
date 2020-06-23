@@ -5,6 +5,8 @@ import java.net.URISyntaxException;
 
 /**
  * 示例5-6：URI的各部分
+ * <p>
+ * 146p
  */
 public class URISplitter2 {
     public static void main(String[] args) {

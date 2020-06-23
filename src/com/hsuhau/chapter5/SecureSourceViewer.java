@@ -1,8 +1,6 @@
 package com.hsuhau.chapter5;
 
 import java.io.BufferedInputStream;
-import java.io.File;
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -13,6 +11,8 @@ import java.net.URL;
 
 /**
  * 示例5-12：下载由口令保护的Web页面的程序
+ * <p>
+ * 165p
  */
 public class SecureSourceViewer {
     public static void main(String[] args) {
@@ -21,7 +21,7 @@ public class SecureSourceViewer {
             try {
                 // 打开URL进行读取
                 URL u = new URL(args[i]);
-                try (InputStream in = new BufferedInputStream(u.openStream() )) {
+                try (InputStream in = new BufferedInputStream(u.openStream())) {
                     // 将InputStream串链到一个Reader
                     Reader r = new InputStreamReader(in);
                     int c;

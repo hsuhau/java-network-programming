@@ -5,6 +5,8 @@ import java.net.UnknownHostException;
 
 /**
  * 示例4-7：www.ibiblio.org和helios.ibiblios.org相同？
+ * <p>
+ * 108p
  */
 public class IBiblioAliases {
     public static void main(String[] args) {

@@ -11,6 +11,8 @@ import java.net.UnknownHostException;
 
 /**
  * 示例4-10：处理Web服务器日志文件
+ * <p>
+ * 114p
  */
 public class Weblog {
     public static void main(String[] args) {
@@ -20,9 +22,9 @@ public class Weblog {
              BufferedReader bin = new BufferedReader(in)) {
 
             for (String entry = bin.readLine();
-            entry!=null;
-            entry = bin.readLine()) {
-            // 分解IP地址
+                 entry != null;
+                 entry = bin.readLine()) {
+                // 分解IP地址
                 int index = entry.indexOf(' ');
                 String ip = entry.substring(0, index);
                 String theRest = entry.substring(index);

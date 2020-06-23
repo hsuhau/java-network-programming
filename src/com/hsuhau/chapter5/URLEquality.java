@@ -4,7 +4,9 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 /**
- * 示例5-5：https://www.ibinlio.org和https://ibinlio.org/相等吗？“【pplp------------------oooooooooooooooooooooooooooooooooooooooooo
+ * 示例5-5：https://www.ibinlio.org和https://ibinlio.org/相等吗？
+ * <p>
+ * 140p
  */
 public class URLEquality {
     public static void main(String[] args) {

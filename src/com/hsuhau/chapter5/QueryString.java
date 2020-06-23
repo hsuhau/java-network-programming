@@ -5,6 +5,8 @@ import java.net.URLEncoder;
 
 /**
  * 5-8：QueryString类
+ * <p>
+ * 152p
  */
 public class QueryString {
     private StringBuilder query = new StringBuilder();

@@ -4,6 +4,8 @@ import java.net.InetAddress;
 
 /**
  * 示例4-5：确实IP地址是IPv4还是IPv6
+ * <p>
+ * 103p
  */
 public class AddressTests {
     public static int getVersion(InetAddress ia) {

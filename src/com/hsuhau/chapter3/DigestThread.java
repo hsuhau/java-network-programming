@@ -7,11 +7,23 @@ import java.security.DigestInputStream;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
+/**
+ * 示例3-1：{@link DigestThread}
+ * <p>
+ * 61p
+ */
 public class DigestThread extends Thread {
     private String filename;
 
     public DigestThread(String filename) {
         this.filename = filename;
+    }
+
+    public static void main(String[] args) {
+        for (String filename : args) {
+            Thread thread = new DigestThread(filename);
+            thread.start();
+        }
     }
 
     @Override
@@ -33,13 +45,6 @@ public class DigestThread extends Thread {
             System.err.println(ex);
         } catch (NoSuchAlgorithmException ex) {
             System.err.println(ex);
-        }
-    }
-
-    public static void main(String[] args) {
-        for (String filename : args) {
-            Thread thread = new DigestThread(filename);
-            thread.start();
         }
     }
 }

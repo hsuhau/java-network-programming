@@ -3,7 +3,6 @@ package com.hsuhau.chapter4;
 import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.LinkedList;
 import java.util.Queue;
@@ -14,9 +13,10 @@ import java.util.concurrent.Future;
 
 /**
  * 示例4-12：PooledWebLog
+ * <p>
+ * 116p
  */
 
-// 由于使用了try-with-resources和mutil-catch，需要Java7
 public class PooledWebLog {
     private final static int NUM_THREADS = 4;
 

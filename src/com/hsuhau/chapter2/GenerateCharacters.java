@@ -13,12 +13,15 @@ public class GenerateCharacters {
         byte[] line = new byte[numberOfCharactersPerLine + 2];
         // +2对应回车和换行
 
-        while (true) { /*无限循环*/
+        // 无限循环
+        while (true) {
             for (int i = start; i < start + numberOfCharactersPerLine; i++) {
                 line[i - start] = (byte) ((i - firstPrintableCharacter) % numberOfPrintableCharacters + firstPrintableCharacter);
             }
-            line[72] = (byte) 'r'; // 回车
-            line[73] = (byte) '\n'; // 换行
+            // 回车
+            line[72] = (byte) 'r';
+            // 换行
+            line[73] = (byte) '\n';
             out.write(line);
             start = ((start + 1) - firstPrintableCharacter) % numberOfPrintableCharacters + firstPrintableCharacter;
         }

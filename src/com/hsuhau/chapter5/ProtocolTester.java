@@ -5,6 +5,8 @@ import java.net.URL;
 
 /**
  * 示例5-1：虚拟机支持哪些协议？
+ * <p>
+ * 125p
  */
 public class ProtocolTester {
     public static void main(String[] args) {
